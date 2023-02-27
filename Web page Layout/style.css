@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* ***************Navigation Panel***************** */
+nav {
+  width: 100vw;
+  height: auto;
+  background-color: transparent;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  color: white;
+}
+
+nav span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: red;
+  padding: 0.5rem 2rem;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding-right: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: black;
+  text-shadow: 2px 3px white;
+  padding: 0.5rem 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+nav ul li a:hover {
+  background-color: red;
+  color: white;
+  text-shadow: none;
+}
+
+/* *****************Hero Image********************* */
+.heroimage {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-image: url("images/concert.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.heroimage>h3 {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  color: black;
+  font-size: 2cm;
+  font-weight: bold;
+}
+.heroimage>h3 > span {
+  color: red;
+}
+
+
+/* *********************************************** */
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .inner {
+  width: 80vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.main .inner #bandheading {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 2rem 0 0 0;
+}
+
+.main .inner>h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem;
+  font-family: cursive;
+}
+
+.main .inner p {
+  width: 90%;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.main .inner .images {
+  width: 60vw;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+}
+
+.main .inner .images .image {
+  width: 33%;
+  height: 80%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.main .inner .images .image h3 {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.main .inner .images .image img {
+  width: 70%;
+  height: 70%;
+}
+
+/* *************************************************************************** */
+.tour-section {
+  width: 100vw;
+  height: 120vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innercontent {
+  width: 60vw;
+  height: 100vh;
+  color: white;
+}
+
+#tour-heading {
+  font-size: 2rem;
+  font-weight: lighter;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.innercontent>p {
+  font-size: 1rem;
+  font-weight: lighter;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  padding-top: 1rem;
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.offers {
+  width: 60vw;
+  height: auto;
+  background-color: white;
+  margin-top: 2rem;
+}
+
+.offers p {
+  width: 100%;
+  color: rgba(0, 0, 0, 0.5);
+  border-bottom: 0.3px solid rgba(143, 139, 139, 0.3);
+  text-align: left;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.offers p span {
+  background-color: red;
+  color: white;
+  padding: 0.3rem 0.5rem;
+  margin-left: 1.5rem;
+}
+
+.offers p small {
+  background-color: black;
+  color: white;
+  padding: 0.3rem 0.5rem;
+  float: right;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+
+.image-gallery {
+  width: 60vw;
+  height: auto;
+  margin-top: 1.5rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-gallery>.image-content {
+  width: 40vw;
+  height: 50vh;
+  text-align: left;
+  margin: 0.5rem;
+}
+
+.image-gallery>.image-content .top>img {
+  width: 100%;
+  height: 100%;
+}
+
+.image-gallery>.image-content .bottom {
+  background-color: white;
+  color: black;
+}
+
+.image-gallery>.image-content .bottom>h2 {
+  font-size: 1.2rem;
+  padding: 0.8rem 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.image-gallery>.image-content .bottom>h3 {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.image-gallery>.image-content .bottom>p {
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.image-gallery>.image-content .bottom>button {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+/* *************************************************************************** */
+.four {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.four .content {
+  width: 70vw;
+  height: 90vh;
+  padding-top: 2rem;
+}
+
+.four .content h1 {
+  padding: 1rem;
+  font-size: 2rem;
+  color: green;
+}
+
+.four .content h3 {
+  padding: 0rem 2rem;
+}
+
+.four .content form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.four .content form input {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 90%;
+  margin: 0.4rem auto;
+}
+
+.four .content form input:placeholder-shown {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.four .content button {
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  margin-left: 2rem;
+}
+
+/* *************footer************** */
+footer {
+  width: 100vw;
+  height: 20vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}
+
+footer>h5 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+footer>h5>span {
+  font-family: 'Anton', sans-serif;
+  font-size: 1cm;
+  color: red;
+}
